@@ -1,0 +1,49 @@
+<?php
+
+include_once('dbConn.php');
+
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if (isset($_GET['id'])) {
+    $rcl_id = $_GET['id'];
+
+
+    $sql = "SELECT rcl_order.*, shopify_order.order_name 
+            FROM rcl_order 
+            INNER JOIN shopify_order ON rcl_order.order_id = shopify_order.order_name 
+            WHERE rcl_order.rcl_id = $rcl_id";
+
+    $result = $conn->query($sql);
+
+    if ($result === FALSE) {
+        echo "Error executing query: " . $conn->error;
+        exit();
+    }
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        $issue_id = $row['issue_id'];
+        $product_id = $row['product_id'];
+        $status_id = $row['status_id'];
+        $order_id = $row['order_id'];
+        $info = $row['Info'];
+        $shopify_order = $row['order_name'];
+    } else {
+        echo "Record not found.";
+        exit();
+    }
+} else {
+    echo "Invalid request. Please provide an ID.";
+    exit();
+}
+
+// Now $shopify_order holds the value of 'order_name' related to the rcl_id
+
+?>
+
+<h2>
+    <?php echo "Order Name: " . $shopify_order; ?>
+</h2>
