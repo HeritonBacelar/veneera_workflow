@@ -22,7 +22,7 @@ To install Veneera_workflow, follow these steps:
 
 ## Database  
 
-![Database](veneera_workflow/data.png)
+![Database](data.png)
 
 
 ## Usage
