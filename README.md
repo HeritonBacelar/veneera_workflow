@@ -1,6 +1,6 @@
-# AwesomeProject
+# Veneera_workflow 
 
-AwesomeProject is a simple yet powerful tool for managing tasks and boosting productivity.
+Veneera_workflow is a simple localhost web application designed to replace the use of excel spreadsheet to treat the reclamation requestes.
 
 ## Table of Contents
 
@@ -31,7 +31,15 @@ Open your web browser and navigate to `http://localhost:3000` to access the appl
 - Create, edit, and delete tasks.
 - Set due dates and priorities for tasks.
 - Categorize tasks into different projects.
-- User-friendly interface for easy task management.
+- User-friendly interface for easy task management. 
+
+## Technologies Used
+
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![PHP](https://img.shields.io/badge/PHP-7.4-blueviolet)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-3.5-brightgreen)
 
 ## Contributing
 
