@@ -22,7 +22,7 @@ To install Veneera_workflow, follow these steps:
 
 ## Database  
 
-![Database](data.png)
+![Database](https://github.com/HeritonBacelar/veneera_workflow/blob/main/data.PNG)
 
 
 ## Usage
